@@ -4,16 +4,15 @@
     <img id="leaf" src="/images/leaf.jpg" />
     <img id="aoimg" src="/images/aologo.jpg" />
     <img id="happy_birthday" src="/images/happybirthday.png">
-    <a-asset-item id="cake-obj" src="/images/model.obj"></a-asset-item>
-    <a-asset-item id="cake-mtl" src="/images/materials.mtl"></a-asset-item>
-    <audio id="birthday_sound" src="/sounds/birthday.mp3" preload="auto"></audio>
+    <img id="happy_holiday" src="/images/happyholiday.png">
+    <a-asset-item id="tree-obj" src="/images/tree.obj"></a-asset-item>
+    <a-asset-item id="tree-mtl" src="/images/tree.mtl"></a-asset-item>
   </a-assets>>
   {{!-- <a-marker-camera preset="hiro"> --}}
   <a-marker preset="hiro">
     <a-entity>
-      <a-obj-model id="cake" src="#cake-obj" mtl="#cake-mtl"></a-obj-model>
-      <a-image src="#happy_birthday" width="2" height="2" rotation="-90 0 0"></a-image>
-      <a-entity id="b-sound" sound="src: #birthday_sound" autoplay="false"></a-entity>
+      <a-obj-model id="cake" src="#tree-obj" mtl="#tree-mtl"></a-obj-model>
+      <a-image src="#happy_holiday" width="2" height="2" rotation="-90 0 0"></a-image>
       <a-animation attribute="rotation" to="0 -360 0" dur="4000" repeat="indefinite" easing="linear"></a-animation>
     </a-entity>
   
