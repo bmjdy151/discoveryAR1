@@ -2,6 +2,7 @@
   <a-assets>
     <img id="texture" src="/images/brick.jpg" />
     <img id="leaf" src="/images/leaf.jpg" />
+    <img id="aoimg" src="/images/aologo.jpg" />
     <img id="happy_birthday" src="/images/happybirthday.png">
     <a-asset-item id="cake-obj" src="/images/model.obj"></a-asset-item>
     <a-asset-item id="cake-mtl" src="/images/materials.mtl"></a-asset-item>
@@ -15,17 +16,18 @@
       <a-entity id="b-sound" sound="src: #birthday_sound" autoplay="false"></a-entity>
       <a-animation attribute="rotation" to="0 -360 0" dur="4000" repeat="indefinite" easing="linear"></a-animation>
     </a-entity>
-  {{!-- <a-marker type="pattern" patternUrl="/images/aomarker.patt" > --}}
+  
   </a-marker>
 
   <a-marker preset='kanji'>
    <a-sphere 
-        color="#04933d" 
-        scale=".25 .25 .25" 
-        position="0 .5 0" 
-        src="#leaf">
-        <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+        color="#FFFFFF" 
+        scale=".5 .5 .5" 
+        position=".5 .5 0" 
+        src="#aoimg">
+        <a-animation attribute="position" to="0 1 .5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
         </a-animation>
+        <a-animation attribute="rotation" to="-360 360 -360" dur="4000" repeat="indefinite" easing="linear"></a-animation>
     </a-sphere> 
     <a-sky src="/images/trees2.png"></a-sky>
 
